@@ -1,6 +1,6 @@
 # product-flavor-demo
 
-A simple app that demonstrates using product flavors and build types to create different flavor of apps from shared codebase. There is 2 flavors created in this app: apple and peach. Each flavor app uses codes from main source set. They configure seperate activity and view according to their use cases.
+A simple app that demonstrates using product flavors and build types to create different flavor of apps from shared codebase. There are 2 flavors created in this app: apple and peach. Each flavor app uses codes from main source set. They configure seperate activity and view according to their use cases.
 
 ## Apple Flavor
 
