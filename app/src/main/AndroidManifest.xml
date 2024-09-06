@@ -13,6 +13,12 @@
         android:theme="@style/Theme.ProductFlavorDemo"
         tools:targetApi="31">
         <activity
+            android:name=".presentation.screen.specific.SpecificActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.screen.general.GeneralActivity"
+            android:exported="false" />
+        <activity
             android:name=".presentation.screen.main.MainActivity"
             android:exported="true">
             <intent-filter>
@@ -22,5 +28,4 @@
             </intent-filter>
         </activity>
     </application>
-
 </manifest>

@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">ProductFlavorDemo</string>
+
+    <!-- Main -->
+    <string name="general">General</string>
+    <string name="navigate_general">Navigate to general</string>
+    <string name="navigate_specific">Navigate to specific</string>
+
+    <!-- Specific -->
+    <string name="specific_main">This is SpecificActivity of the main sourceSet.</string>
+
+    <!-- SpecificComponent -->
+    <string name="main_specific_component">Main Specific Component</string>
 </resources>
