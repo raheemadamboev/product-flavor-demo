@@ -20,7 +20,27 @@ android {
     buildTypes {
         release {
             isMinifyEnabled = false
+            isDebuggable = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+        }
+
+        create("qa") {
+            initWith(getByName("debug"))
+            applicationIdSuffix = ".qa"
+        }
+    }
+
+    flavorDimensions += "default"
+
+    productFlavors {
+        create("apple") {
+            dimension = "default"
+            applicationId = "xyz.teamgravity.apple"
+        }
+
+        create("peach") {
+            dimension = "default"
+            applicationId = "xyz.teamgravity.peach"
         }
     }
 
