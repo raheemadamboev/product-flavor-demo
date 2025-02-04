@@ -1,8 +1,16 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application>
         <activity
-            android:name="xyz.teamgravity.productflavordemo.presentation.screen.specific.SpecificActivity"
+            android:name="xyz.teamgravity.apple.presentation.screen.specific.SpecificActivity"
             android:exported="false" />
+        <activity-alias
+            android:name="${applicationId}.aliasSpecificActivity"
+            android:targetActivity="xyz.teamgravity.apple.presentation.screen.specific.SpecificActivity"
+            tools:replace="android:targetActivity" />
+        <activity
+            android:name=".presentation.screen.specific.SpecificActivity"
+            tools:node="remove" />
     </application>
 </manifest>

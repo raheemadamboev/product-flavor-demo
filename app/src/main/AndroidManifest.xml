@@ -15,6 +15,10 @@
         <activity
             android:name=".presentation.screen.specific.SpecificActivity"
             android:exported="false" />
+        <activity-alias
+            android:name="${applicationId}.aliasSpecificActivity"
+            android:targetActivity=".presentation.screen.specific.SpecificActivity" />
+
         <activity
             android:name=".presentation.screen.general.GeneralActivity"
             android:exported="false" />

@@ -1,5 +1,6 @@
 package xyz.teamgravity.productflavordemo.presentation.screen.main
 
+import android.content.ComponentName
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -8,7 +9,6 @@ import xyz.teamgravity.productflavordemo.core.util.ModuleUtil
 import xyz.teamgravity.productflavordemo.core.util.ThemeUtil
 import xyz.teamgravity.productflavordemo.databinding.ActivityMainBinding
 import xyz.teamgravity.productflavordemo.presentation.screen.general.GeneralActivity
-import xyz.teamgravity.productflavordemo.presentation.screen.specific.SpecificActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -44,7 +44,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun startSpecificActivity() {
-        val intent = Intent(this, SpecificActivity::class.java)
+        val intent = Intent()
+        intent.setComponent(ComponentName(packageName, "$packageName.aliasSpecificActivity"))
         startActivity(intent)
     }
 

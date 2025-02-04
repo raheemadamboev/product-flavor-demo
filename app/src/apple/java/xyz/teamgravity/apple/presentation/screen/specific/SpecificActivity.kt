@@ -16,5 +16,7 @@ class SpecificActivity : AppCompatActivity() {
         binding = ActivitySpecificBinding.inflate(layoutInflater)
         setContentView(binding.root)
         ThemeUtil.handlePaddings(binding.root)
+
+        println("apple")
     }
 }
